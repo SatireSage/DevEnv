@@ -2,8 +2,11 @@
 
 ## Setting Up ssh
 
-Command: ssh username@vdt_address
+Command: 
+```bash
+ssh username@vdt_address
 
+```
 ### Passwordless ssh
 
 **Command:**
@@ -166,16 +169,16 @@ fi
 
 # Additional tools:
  - neovim (nvim)
- -- Improved version of Vim editor/Extensible with plugins and Lua scripting/Enhanced user interface and performance.
+ * Improved version of Vim editor/Extensible with plugins and Lua scripting/Enhanced user interface and performance.
  - fuzzy finder (fzf)
- -- Quick file searching/Integration with command-line tools/Fuzzy matching for partial search queries.
+ *  Quick file searching/Integration with command-line tools/Fuzzy matching for partial search queries.
  - ripgrep (rg)
- -- Better grep. Fast search tool for files/Uses regex patterns/Supports searching in large codebases.
+ * Better grep. Fast search tool for files/Uses regex patterns/Supports searching in large codebases.
  - exa/eza
- -- Modern replacement for 'ls' command/Colorful output and extended file information/Supports Git status integration.
+ * Modern replacement for 'ls' command/Colorful output and extended file information/Supports Git status integration.
  - zoxide (z)
- -- Smart directory navigation/Tracks frequently visited directories/Quick jumping to directories with fuzzy matching.
+ * Smart directory navigation/Tracks frequently visited directories/Quick jumping to directories with fuzzy matching.
  - midnight commander (mc)
- -- File manager with a text-based user interface/Dual-pane layout for easy file operations/Built-in file viewer and editor.
+ * File manager with a text-based user interface/Dual-pane layout for easy file operations/Built-in file viewer and editor.
  - bat
- -- Enhanced 'cat' command with syntax highlighting/Integrated Git support/Supports paging for large files.
+ * Enhanced 'cat' command with syntax highlighting/Integrated Git support/Supports paging for large files.
