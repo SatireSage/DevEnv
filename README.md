@@ -32,15 +32,17 @@ Now when you reconnect via ssh you will not be prompted for your credentials.
 ## Installing Tmux
 
 **Command:**
+CentOS7 -
 ```bash
-CentOS7 - /usr/bin/sudo yum install tmux
-```
-```bash
-Alma9 - sudo dnf install tmux
+sudo yum install tmux
 ```
 
-**Note:** If the above command does not work on your machine then you may use:
-/usr/bin/sudo dnf install tmux
+Alma9 -
+```bash
+- sudo dnf install tmux
+```
+
+**Note:** If the above command does not work on your machine then you may use: `/usr/bin/sudo`
 
 Before we launch tmux let's add some configurations
 
@@ -168,6 +170,10 @@ fi
 ```
 
 # Additional tools:
+ - **zshell (zsh):** Advanced shell with scripting capabilities/Extensible with themes and plugins/Improved command-line experience with features like globbing and completion.
+    * Oh My Zsh: Framework for managing Zsh configuration/Provides themes and plugins for customization/Eases setup and usage of Zsh for beginners and experts.
+        * Zsh Autosuggestions: Suggests commands based on command history/Improves typing speed and reduces errors/Interactive and non-intrusive suggestions.
+        * Zsh Autocomplete: Enhances command completion with smarter suggestions/Supports completion for commands, options, and arguments/Configurable and extensible with custom completions.
  - **neovim (nvim):** Improved version of Vim editor/Extensible with plugins and Lua scripting/Enhanced user interface and performance.
  - **fuzzy finder (fzf):** Quick file searching/Integration with command-line tools/Fuzzy matching for partial search queries.
  - **ripgrep (rg):** Better grep. Fast search tool for files/Uses regex patterns/Supports searching in large codebases.
