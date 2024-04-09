@@ -147,7 +147,7 @@ Remember, the default prefix key in tmux is `Ctrl+b`, but this can be changed in
 ### Launch Tmux automatically:
 Add the following to you cshell/bash shell scripts:
 
-For cshell:
+**For cshell:**
  - CentOS7: `~/.shellrc`
  - Alma9: `~/.tcshrc`
 ```csh
@@ -159,7 +159,7 @@ endif
 
 ```
 
-For bash:
+**For bash:**
 Alma9/CentOS7: `~/.bashrc`
 ```bash
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
@@ -168,17 +168,10 @@ fi
 ```
 
 # Additional tools:
- - neovim (nvim)
- * Improved version of Vim editor/Extensible with plugins and Lua scripting/Enhanced user interface and performance.
- - fuzzy finder (fzf)
- *  Quick file searching/Integration with command-line tools/Fuzzy matching for partial search queries.
- - ripgrep (rg)
- * Better grep. Fast search tool for files/Uses regex patterns/Supports searching in large codebases.
- - exa/eza
- * Modern replacement for 'ls' command/Colorful output and extended file information/Supports Git status integration.
- - zoxide (z)
- * Smart directory navigation/Tracks frequently visited directories/Quick jumping to directories with fuzzy matching.
- - midnight commander (mc)
- * File manager with a text-based user interface/Dual-pane layout for easy file operations/Built-in file viewer and editor.
- - bat
- * Enhanced 'cat' command with syntax highlighting/Integrated Git support/Supports paging for large files.
+ - **neovim (nvim):** Improved version of Vim editor/Extensible with plugins and Lua scripting/Enhanced user interface and performance.
+ - **fuzzy finder (fzf):** Quick file searching/Integration with command-line tools/Fuzzy matching for partial search queries.
+ - **ripgrep (rg):** Better grep. Fast search tool for files/Uses regex patterns/Supports searching in large codebases.
+ - **exa/eza:** Modern replacement for 'ls' command/Colorful output and extended file information/Supports Git status integration.
+ - **zoxide (z):** Smart directory navigation/Tracks frequently visited directories/Quick jumping to directories with fuzzy matching.
+ - **midnight commander (mc):** File manager with a text-based user interface/Dual-pane layout for easy file operations/Built-in file viewer and editor.
+ - **bat:** Enhanced 'cat' command with syntax highlighting/Integrated Git support/Supports paging for large files.
