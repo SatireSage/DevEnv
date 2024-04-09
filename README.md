@@ -116,26 +116,66 @@ Follow the configuration steps within the respective links for using them.
 
 ### Tmux cheatsheet: [Cheatsheet](https://tmuxcheatsheet.com/)
 
-<!---
-Potentially add common commands
---->
+#### Common Commands:
+Here's a list of common tmux commands:
+
+1. `tmux new-session -s <session-name>`: Create a new session with a specified name.
+2. `tmux attach -t <session-name>`: Attach to an existing session.
+3. `tmux detach`: Detach from the current session.
+4. `tmux list-sessions`: List all active sessions.
+5. `tmux kill-session -t <session-name>`: Kill a specific session.
+
+Within a tmux session, you can use the following commands, typically prefixed with a default key binding (`Ctrl+b`):
+
+1. `Ctrl+b %`: Split the current pane vertically.
+2. `Ctrl+b "`: Split the current pane horizontally.
+3. `Ctrl+b o`: Move to the next pane.
+4. `Ctrl+b ;`: Toggle between the current and previous pane.
+5. `Ctrl+b x`: Close the current pane.
+6. `Ctrl+b c`: Create a new window.
+7. `Ctrl+b n`: Move to the next window.
+8. `Ctrl+b p`: Move to the previous window.
+9. `Ctrl+b w`: List all windows.
+10. `Ctrl+b ,`: Rename the current window.
+11. `Ctrl+b &`: Close the current window.
+
+Remember, the default prefix key in tmux is `Ctrl+b`, but this can be changed in the tmux configuration file (`~/.tmux.conf`).
 
 ### Launch Tmux automatically:
 Add the following to you cshell/bash shell scripts:
 
-CentOS7:  ~/.shellrc
-Alma9: ~/.tcshrc or ~/.bashrc
+For cshell:
+ - CentOS7: `~/.shellrc`
+ - Alma9: `~/.tcshrc`
+```csh
+if ( $?prompt && ! $?TMUX && "$TERM" !~ "screen*" && "$TERM" !~ "tmux*" ) then
+    if ( `which tmux` != "" ) then
+        exec tmux
+    endif
+endif
 
-<!---
-Adding the command
---->
+```
+
+For bash:
+Alma9/CentOS7: `~/.bashrc`
+```bash
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+```
 
 # Additional tools:
  - neovim (nvim)
+ -- Improved version of Vim editor/Extensible with plugins and Lua scripting/Enhanced user interface and performance.
  - fuzzy finder (fzf)
+ -- Quick file searching/Integration with command-line tools/Fuzzy matching for partial search queries.
  - ripgrep (rg)
+ -- Better grep. Fast search tool for files/Uses regex patterns/Supports searching in large codebases.
  - exa/eza
+ -- Modern replacement for 'ls' command/Colorful output and extended file information/Supports Git status integration.
  - zoxide (z)
+ -- Smart directory navigation/Tracks frequently visited directories/Quick jumping to directories with fuzzy matching.
  - midnight commander (mc)
+ -- File manager with a text-based user interface/Dual-pane layout for easy file operations/Built-in file viewer and editor.
  - bat
-
+ -- Enhanced 'cat' command with syntax highlighting/Integrated Git support/Supports paging for large files.
