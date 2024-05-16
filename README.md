@@ -1,4 +1,4 @@
-# SSH
+ SSH
 
 ## Setting Up ssh
 
@@ -181,3 +181,11 @@ fi
  - **zoxide (z):** Smart directory navigation/Tracks frequently visited directories/Quick jumping to directories with fuzzy matching.
  - **midnight commander (mc):** File manager with a text-based user interface/Dual-pane layout for easy file operations/Built-in file viewer and editor.
  - **bat:** Enhanced 'cat' command with syntax highlighting/Integrated Git support/Supports paging for large files.
+ - **fd:**
+ - **git-delta:**
+ - **tlrc:**
+
+# Cool stuff:
+ - sl
+ - pipes.sh
+ - cmatrix
